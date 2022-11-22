@@ -48,6 +48,12 @@ replication with `synchronous_commit` and `synchronous_standby_names`. See
 but the use of [Group Commit](group-commit) is recommended instead
 in all cases.
 
+!!! WARNING
+    While using multiple BDR enabled databases (we advise against it)
+    the lsn sync confirmation may come from a diferent database on a
+    node that is in our synchronous_standby_names and thus not assure
+    that the data is really synced on the database that we really want.
+
 ## Terms and definitions
 
 BDR nodes can take different
