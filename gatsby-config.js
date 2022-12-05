@@ -77,6 +77,7 @@ const sourceToPluginConfig = {
   postgis: { name: "postgis", path: "product_docs/docs/postgis" },
   repmgr: { name: "repmgr", path: "product_docs/docs/repmgr" },
   slony: { name: "slony", path: "product_docs/docs/slony" },
+  sql_assess: { name: "sql_assess", path: "product_docs/docs/sql_assess"},
 };
 
 const externalSourcePlugins = () => {
